@@ -19,7 +19,7 @@ paths.css = paths.webroot + "lib/**/*.css";
 paths.minCss = paths.webroot + "lib/**/*.min.css";
 paths.concatJsDest = paths.webroot + "js/site.min.js";
 paths.concatCssDest = paths.webroot + "css/site.min.css";
-paths.scss = "Styles/**/*.scss";
+paths.scss = "Styles/scss/**/*.scss";
 
 gulp.task("clean:js", function (cb) {
     rimraf(paths.concatJsDest, cb);
@@ -30,7 +30,7 @@ gulp.task("clean:css", function (cb) {
 });
 
 gulp.task("sass", function () {
-    return gulp.src('Styles/styles.scss')
+    return gulp.src(paths.scss)
       .pipe(sass())
       .pipe(gulp.dest('wwwroot/css'));
 });
