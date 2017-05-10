@@ -9,10 +9,10 @@ namespace JobWebsiteClone.Models
 {
     public class JobSiteContext: IdentityDbContext<User>
     {
-        public JobSiteContext()
-        {
+        //public JobSiteContext()
+        //{
 
-        }
+        //}
 
         public JobSiteContext(DbContextOptions options) : base(options)
         {

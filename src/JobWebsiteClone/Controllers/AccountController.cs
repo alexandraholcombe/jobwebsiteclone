@@ -17,6 +17,13 @@ namespace JobWebsiteClone.Controllers
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
         // GET: /<controller>/
+
+        public AccountController(JobSiteContext db, UserManager<User> userManager, SignInManager<User> signInManager)
+        {
+            _db = db;
+            _userManager = userManager;
+            _signInManager = signInManager;
+        }
         public IActionResult Index()
         {
             if (User.Identity.IsAuthenticated)
