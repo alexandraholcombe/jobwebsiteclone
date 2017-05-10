@@ -34,7 +34,7 @@ namespace JobWebsiteClone
             services.AddEntityFramework()
                 .AddDbContext<JobSiteContext>(options =>
                     options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
-            services.AddIdentity<User, IdentityRole>()
+            services.AddIdentity<User, Role>()
                 .AddEntityFrameworkStores<JobSiteContext>()
                 .AddDefaultTokenProviders();
         }

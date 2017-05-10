@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace JobWebsiteClone.Models
 {
-    public class JobSiteContext: IdentityDbContext<User>
+    public class JobSiteContext: IdentityDbContext<User,Role,string>
     {
         //public JobSiteContext()
         //{
 
         //}
+        //public DbSet<Role> Roles { get; set; }
 
         public JobSiteContext(DbContextOptions options) : base(options)
         {

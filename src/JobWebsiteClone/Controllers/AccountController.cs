@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using JobWebsiteClone.Models;
 using JobWebsiteClone.ViewModels;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -16,13 +17,15 @@ namespace JobWebsiteClone.Controllers
         private readonly JobSiteContext _db;
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
+        private readonly RoleManager<Role> _roleManager;
         // GET: /<controller>/
 
-        public AccountController(JobSiteContext db, UserManager<User> userManager, SignInManager<User> signInManager)
+        public AccountController(JobSiteContext db, UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<Role> roleManager)
         {
             _db = db;
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
         }
         public IActionResult Index()
         {
@@ -73,6 +76,47 @@ namespace JobWebsiteClone.Controllers
             else
             {
                 return View();
+            }
+        }
+
+        public IActionResult EmployerRegister()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EmployerRegister(RegisterViewModel model)
+        {
+            var user = new User { UserName = model.Email, Email = model.Email };
+            IdentityResult result = await _userManager.CreateAsync(user, model.Password);
+            //            IdentityResult result = userManager.CreateAsync
+            //(user, obj.Password).Result;
+            if (result.Succeeded)
+            {
+                if (!_roleManager.RoleExistsAsync("Admin").Result)
+                {
+                    Role adminRole = new Role();
+                    adminRole.Name = "Admin";
+                    IdentityResult roleResult = _roleManager
+                        .CreateAsync(adminRole).Result;
+                    if (!roleResult.Succeeded)
+                    {
+                        ModelState.AddModelError("",
+                         "Error while creating role!");
+                        return View(model);
+                    }
+                    //_db.Roles.Add(adminRole);
+                    //_db.SaveChanges();
+                }
+                _userManager.AddToRoleAsync(user, "Admin").Wait();
+                //var role = await _roleManager.FindByNameAsync("Admin");
+                //user.Roles.Add(adminRole);
+                //_db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(model);
             }
         }
 
