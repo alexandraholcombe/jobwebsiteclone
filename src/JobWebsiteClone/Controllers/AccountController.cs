@@ -93,10 +93,10 @@ namespace JobWebsiteClone.Controllers
             //(user, obj.Password).Result;
             if (result.Succeeded)
             {
-                if (!_roleManager.RoleExistsAsync("Admin").Result)
+                if (!_roleManager.RoleExistsAsync("Employer").Result)
                 {
                     Role adminRole = new Role();
-                    adminRole.Name = "Admin";
+                    adminRole.Name = "Employer";
                     IdentityResult roleResult = _roleManager
                         .CreateAsync(adminRole).Result;
                     if (!roleResult.Succeeded)
@@ -108,8 +108,8 @@ namespace JobWebsiteClone.Controllers
                     //_db.Roles.Add(adminRole);
                     //_db.SaveChanges();
                 }
-                _userManager.AddToRoleAsync(user, "Admin").Wait();
-                //var role = await _roleManager.FindByNameAsync("Admin");
+                _userManager.AddToRoleAsync(user, "Employer").Wait();
+                //var role = await _roleManager.FindByNameAsync("Employer");
                 //user.Roles.Add(adminRole);
                 //_db.SaveChanges();
                 return RedirectToAction("Index");
