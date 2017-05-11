@@ -2,6 +2,20 @@
 //    jobCollection: ko.observableArray()
 //};
 
+var defaultBounds = new google.maps.LatLngBounds(
+  new google.maps.LatLng(-90, -180),
+  new google.maps.LatLng(90, 180));
+
+var input = document.getElementById('city');
+var options = {
+    bounds: defaultBounds,
+    types: ['(cities)']
+};
+
+var searchBox = new google.maps.places.SearchBox(input, {
+    bounds: defaultBounds
+});
+
 $(document).ready(function () {
     //$.ajax({
     //    type: "GET",
@@ -14,6 +28,5 @@ $(document).ready(function () {
     //}).error(function (ex) {
     //    alert("Error");
     //});
-$('input#city').cityAutocomplete();
 });
 
