@@ -20,5 +20,6 @@ namespace JobWebsiteClone.Models
         public string Location { get; set; }
         public string Salary { get; set; }
         public string JobType { get; set; }
+        public virtual Employer Employer{ get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace JobWebsiteClone.Models
         //}
         //public DbSet<Role> Roles { get; set; }
         public DbSet<Listing> Listings { get; set; }
-
+        public DbSet<Employer> Employers { get; set; }
         public JobSiteContext(DbContextOptions options) : base(options)
         {
 

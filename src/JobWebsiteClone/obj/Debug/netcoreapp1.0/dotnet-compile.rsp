@@ -1,5 +1,5 @@
---temp-output:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\obj\Debug\netcoreapp1.0\
---out:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\bin\Debug\netcoreapp1.0\JobWebsiteClone.dll
+--temp-output:C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\bin\Debug\netcoreapp1.0\JobWebsiteClone.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -209,24 +209,28 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XmlDocument\4.0.1\ref\netstandard1.3\System.Xml.XmlDocument.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll
---resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\obj\Debug\netcoreapp1.0\JobWebsiteClonedotnet-compile.deps.json",JobWebsiteClone.deps.json
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Program.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\SOCContext.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Startup.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Controllers\AccountController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Controllers\HomeController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Controllers\JobController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Migrations\20170510181439_User.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Migrations\20170510181439_User.Designer.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Migrations\20170510223720_addRole.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Migrations\20170510223720_addRole.Designer.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Migrations\20170510233701_AddListings.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Migrations\20170510233701_AddListings.Designer.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Migrations\JobSiteContextModelSnapshot.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Models\JobSiteContext.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Models\Listing.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Models\Role.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\Models\User.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\node_modules\node-gyp\lib\Find-VS2017.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\ViewModels\LoginViewModel.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\JobWebsiteClone\src\JobWebsiteClone\ViewModels\RegisterViewModel.cs
+--resource:"C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\obj\Debug\netcoreapp1.0\JobWebsiteClonedotnet-compile.deps.json",JobWebsiteClone.deps.json
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Program.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\SOCContext.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Startup.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Controllers\AccountController.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Controllers\HomeController.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Controllers\JobController.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Migrations\20170510181439_User.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Migrations\20170510181439_User.Designer.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Migrations\20170510223720_addRole.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Migrations\20170510223720_addRole.Designer.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Migrations\20170510233701_AddListings.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Migrations\20170510233701_AddListings.Designer.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Migrations\20170511155650_addEmployer.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Migrations\20170511155650_addEmployer.Designer.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Migrations\JobSiteContextModelSnapshot.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Models\Employer.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Models\JobSiteContext.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Models\Listing.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Models\Role.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\Models\User.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\node_modules\node-gyp\lib\Find-VS2017.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\ViewModels\IndexViewModel.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\ViewModels\LoginViewModel.cs
+C:\Users\epicodus\Desktop\jobwebsiteclone\src\JobWebsiteClone\ViewModels\RegisterViewModel.cs
