@@ -37,6 +37,9 @@
           "lib/netstandard1.3/Castle.Core.dll": {}
         }
       },
+      "knockoutjs/3.4.2": {
+        "type": "package"
+      },
       "Libuv/1.9.0": {
         "type": "package",
         "dependencies": {
@@ -4219,6 +4222,17 @@
         "lib/netstandard1.3/Castle.Core.dll",
         "lib/netstandard1.3/Castle.Core.xml",
         "readme.txt"
+      ]
+    },
+    "knockoutjs/3.4.2": {
+      "sha512": "MYGjgXxvg2tBzxuclV51Zs+p8iP+iWs+y6uQdMZRlHP2B5HQuXOd+3eT1lcV6UPshHE+1nr1bMgu1YTC44frOQ==",
+      "type": "package",
+      "path": "knockoutjs/3.4.2",
+      "files": [
+        "Content/Scripts/knockout-3.4.2.debug.js",
+        "Content/Scripts/knockout-3.4.2.js",
+        "knockoutjs.3.4.2.nupkg.sha512",
+        "knockoutjs.nuspec"
       ]
     },
     "Libuv/1.9.0": {
@@ -10718,7 +10732,8 @@
       "Microsoft.Extensions.Logging.Console >= 1.0.0",
       "Microsoft.NETCore.App >= 1.0.1",
       "Moq >= 4.7.8",
-      "System.Linq >= 4.1.0"
+      "System.Linq >= 4.1.0",
+      "knockoutjs >= 3.4.2"
     ],
     ".NETCoreApp,Version=v1.0": []
   },

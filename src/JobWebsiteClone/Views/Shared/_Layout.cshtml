@@ -2,9 +2,19 @@
 
 <html>
 <head>
+    @*<script src="~/lib/jquery/dist/core.js"></script>*@
+    @*<script src="~/lib/jquery/dist/jquery.js"></script>*@
+    @*<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>*@
     <link href="~/css/site.min.css" rel="stylesheet" />
-    <script src="~/js/site.min.js"></script>
+    @*<script src="~/js/site.min.js"></script>*@
+    <script src="~/build/js/vendor.min.js"></script>
+    <script src="~/build/js/app.js"></script>
+    <script src="~/lib/city-autocomplete/jquery.city-autocomplete.js"></script>
     <link href="~/css/styles.css" rel="stylesheet" />
+    <script src="~/js/scripts.js"></script>
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?libraries=places&language=en"></script>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 </head>

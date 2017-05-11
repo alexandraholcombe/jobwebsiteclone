@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
-    "signature": "8f05fe3187eb915525d8c2a8ddcb242c3122772c"
+    "signature": "837702decc43a0d5304c0d382df3705d00439a70"
   },
   "compilationOptions": {
     "defines": [
@@ -29,7 +29,8 @@
           "Microsoft.Extensions.Configuration.Json": "1.0.0",
           "System.Linq": "4.1.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.0.0",
-          "Moq": "4.7.8"
+          "Moq": "4.7.8",
+          "knockoutjs": "3.4.2"
         },
         "runtime": {
           "JobWebsiteClone.dll": {}
@@ -71,6 +72,7 @@
           "lib/netstandard1.3/Castle.Core.dll": {}
         }
       },
+      "knockoutjs/3.4.2": {},
       "Microsoft.AspNetCore.Antiforgery/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.DataProtection": "1.0.0",
@@ -3595,6 +3597,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-iLINpMFc07bcb0d075AB0mcXV/MT8J8oyBarDSeyrLM03UoCVOuvYu87LI4511XHfy7XEhHtMDum5gt2s56xDg=="
+    },
+    "knockoutjs/3.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MYGjgXxvg2tBzxuclV51Zs+p8iP+iWs+y6uQdMZRlHP2B5HQuXOd+3eT1lcV6UPshHE+1nr1bMgu1YTC44frOQ=="
     },
     "Microsoft.AspNetCore.Antiforgery/1.0.0": {
       "type": "package",
