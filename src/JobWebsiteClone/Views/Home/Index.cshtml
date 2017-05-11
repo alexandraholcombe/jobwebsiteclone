@@ -14,9 +14,9 @@
     @using (Html.BeginForm("Search", "Job"))
     {
         <div class="form-group">
-            @*@Html.LabelFor(m => m.Location)
-            @Html.TextBoxFor(m => m.Location, new { @class = "form-control", type = "text", required = "required" })*@
-            <input id="city" name="city" autocomplete="off" data-country="us">
+            @Html.LabelFor(m => m.Location)
+            @Html.TextBoxFor(m => m.Location, new { @class = "form-control", type = "text", required = "required" , id= "city" })
+            @*<input id="city" name="city" autocomplete="off" data-country="us">*@
         </div>
 
         <div class="form-group">

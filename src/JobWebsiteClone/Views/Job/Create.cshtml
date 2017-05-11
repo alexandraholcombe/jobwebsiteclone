@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model JobWebsiteClone.Models.Listing
+
+@using (Html.BeginForm("Create", "Job", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.JobTitle)
+        @Html.TextBoxFor(m => m.JobTitle, new { @class = "form-control", required = "required" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Description)
+        @Html.TextBoxFor(m => m.Description, new { @class = "form-control", required = "required" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Location)
+        @Html.TextBoxFor(m => m.Location, new { id = "city", @class = "form-control", required = "required" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Salary)
+        @Html.TextBoxFor(m => m.Salary, new { @class = "form-control", required = "required" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.JobType)
+        @Html.TextBoxFor(m => m.JobType, new { @class = "form-control", required = "required" })
+    </div>
+    @*@Html.HiddenFor(m => m.Employer)*@
+    <input type="submit" value="Register" class="btn btn-primary" />   
+}   
+
+<script type="text/javascript" src=@ViewBag.PlacesKey></script>
+<script src="~/js/listing.js" async defer></script>

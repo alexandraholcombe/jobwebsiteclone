@@ -26,13 +26,17 @@ namespace JobWebsiteClone.Controllers
 
         public IActionResult Create()
         {
+            EnvironmentVariables newKey = new EnvironmentVariables();
+            ViewBag.PlacesKey = newKey.PlacesKey;
             return View();
         }
 
         [HttpPost]
         public IActionResult Create(Listing listing)
         {
-            return View();
+            _db.Listings.Add(listing);
+            _db.SaveChanges();
+            return RedirectToAction("Index", "Home");
         }
 
         public IActionResult Details(int listingId)
@@ -46,5 +50,6 @@ namespace JobWebsiteClone.Controllers
             var Matches = _db.Listings.Where(l => l.JobTitle.Contains(model.Keyword)&&l.Location == model.Location).ToList();
             return View(Matches);
         }
+        
     }
 }
