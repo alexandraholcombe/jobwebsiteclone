@@ -9,15 +9,13 @@
 
 @model IndexViewModel
 
-@if (!User.Identity.IsAuthenticated)
+@using (Html.BeginForm("Search", "Job"))
 {
-    @using (Html.BeginForm("Search", "Job"))
-    {
-        <div class="form-group">
-            @Html.LabelFor(m => m.Location)
-            @Html.TextBoxFor(m => m.Location, new { @class = "form-control", type = "text", required = "required" , id= "city" })
-            @*<input id="city" name="city" autocomplete="off" data-country="us">*@
-        </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Location)
+        @Html.TextBoxFor(m => m.Location, new { @class = "form-control", type = "text", required = "required", id = "city" })
+        @*<input id="city" name="city" autocomplete="off" data-country="us">*@
+    </div>
 
         <div class="form-group">
             @Html.LabelFor(m => m.Keyword)
@@ -25,8 +23,10 @@
         </div>
 
         <input type="submit" value="Search" class="btn btn-primary" />
-    }
+}
 
+@if (!User.Identity.IsAuthenticated)
+{
         <p>@Html.ActionLink("Log In", "Login", "Account")</p>
         <p>@Html.ActionLink("Register", "Register", "Account")</p>
         <p>@Html.ActionLink("Register as Employer", "EmployerRegister", "Account")</p>
