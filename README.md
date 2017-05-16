@@ -1,7 +1,7 @@
 Sales Tracker Website
 =========================
 
-**By Alexandra Holcombe && Renee Mei**
+**By Alexandra Holcombe && Renee Mei**  
 Webpage built with .NET Core using Entity Framework migrations, SQL Server, and Identity Authentication.  Two-day project practicing API calls for Week 4 of Epicodus .NET curriculum.
 
 ## Installation
