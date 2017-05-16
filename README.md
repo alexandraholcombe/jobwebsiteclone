@@ -1,4 +1,4 @@
-Sales Tracker Website
+Monster Clone
 =========================
 
 **By Alexandra Holcombe && Renee Mei**  
